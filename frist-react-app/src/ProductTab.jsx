@@ -1,11 +1,11 @@
 import Product  from "./Product.jsx";
 
 function ProductTab(){
-    let options = ["hi-tech", "durable", "fast"];
-    // let options2 = { a: "hi-teach", b: "durable", c:"fast"};
+    let options = [<li>"hi-tech"</li>, <li>"durable"</li>, <li>"fast"</li> ];
+    
     return (
         <>
-    <Product title = "phone" price ={40000} features ={{a: "hi-tech"}} />
+    <Product title = "phone" price ={40000} features ={options} />
        </>
     );
 }
